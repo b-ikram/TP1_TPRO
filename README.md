@@ -48,12 +48,6 @@ Notes complémentaires
 
 Auteur et date
 --------------
-Auteur: (à renseigner)
-Date: 15/02/2026
+Auteur: Badaoui Ikram
+Date: 2/11/2026
 
-Licence
--------
-Indiquer la licence si nécessaire (ex. MIT) ou laisser vide selon les consignes du cours.
-
----
-Pour toute modification supplémentaire (ex. ajouter des exemples, tests ou un guide d'installation détaillé), dites-moi ce que vous voulez et je l'ajoute.
