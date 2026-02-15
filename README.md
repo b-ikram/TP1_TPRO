@@ -1,53 +1,76 @@
-# TP01 — TPRO
+# Shortest Cycle Finder – Graph GUI
 
-Description
------------
-Ce dépôt contient le travail pratique TP01 pour le cours TPRO. Le script principal est `main.py` et sert de point d'entrée pour exécuter l'exercice demandé.
+ **Date** : 02/11/2025  
+ **Module** : TPRO  
+ **Auteur** : Ikram Badaoui  
+ **Langage** : Python  
+  
 
-Contenu du dépôt
------------------
-- `main.py` : script principal à lancer pour exécuter le programme du TP.
-- `README.md` : ce fichier, qui explique le contenu, l'installation et l'utilisation.
+---
 
-Prérequis
----------
-- Python 3.8 ou supérieur installé sur la machine.
+##  Description
 
-Installation
-------------
-Depuis une console (PowerShell sur Windows) :
+Ce projet est une application graphique interactive permettant de **créer un graphe non orienté**, puis de **détecter et visualiser les cycles les plus courts** (shortest cycles) dans ce graphe.
 
-```powershell
-python --version
-# (optionnel) créez et activez un environnement virtuel :
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-# (si des dépendances sont nécessaires, installez-les ici)
-```
+L’utilisateur peut :
+- ajouter des sommets (nœuds),
+- créer ou supprimer des arêtes,
+- supprimer des éléments,
+- lancer un algorithme de détection des **cycles de longueur minimale**,
+- visualiser **tous les cycles minimaux** trouvés avec des couleurs distinctes.
 
-Exécution
----------
-Pour lancer le programme :
+---
 
-```powershell
-python main.py
-```
+##  Objectifs pédagogiques
 
-Structure et objectifs
----------------------
-Ce TP a pour objectif de :
-- Implémenter la logique demandée par l'énoncé du TP (voir consignes du cours).
-- Fournir un script exécutable et documenté.
+- Manipulation de graphes (représentation, parcours)
+- Implémentation d’un algorithme basé sur **BFS**
+- Détection de cycles dans un graphe non orienté
+- Développement d’une **interface graphique (GUI)** en Python
+- Visualisation algorithmique (graphes, cycles)
 
-Si vous êtes l'enseignant ou un évaluateur, vérifiez que `main.py` suit les critères d'évaluation fournis.
+---
 
-Notes complémentaires
---------------------
-- Ajoutez ici les informations spécifiques au TP (entrées attendues, format des fichiers, exemples d'utilisation).
-- Pour tout problème ou question, contactez l'auteur ou la personne responsable du dépôt.
+##  Fonctionnalités
 
-Auteur et date
---------------
-Auteur: Badaoui Ikram
-Date: 2/11/2026
+###  Création du graphe
+- Ajout de nœuds par clic sur le canvas
+- Ajout d’arêtes en sélectionnant deux nœuds
+- Suppression de nœuds ou d’arêtes
+
+###  Analyse du graphe
+- Détection du **plus court cycle**
+- Recherche de **tous les cycles de longueur minimale**
+- Affichage du résultat textuel
+- Mise en évidence graphique des cycles (couleurs différentes)
+
+###  Interface utilisateur
+- Interface simple et intuitive
+- Modes distincts :
+  - Add Nodes
+  - Add Edges
+  - Delete
+- Visualisation dynamique sur canvas
+
+---
+
+##  Algorithme utilisé
+
+- **Parcours en largeur (BFS)** à partir de chaque sommet
+- Calcul des distances et des parents
+- Détection d’un cycle lorsqu’une arête relie deux sommets déjà visités
+- Reconstruction du cycle à partir des parents
+- Conservation uniquement des **cycles de longueur minimale**
+
+Complexité approximative :
+- **Temps** : \( O(V \cdot (V + E)) \)
+- **Espace** : \( O(V + E) \)
+
+---
+
+##  Exécution du programme
+
+### Prérequis
+- Python 3.x
+- Tkinter (inclus par défaut avec Python)
 
