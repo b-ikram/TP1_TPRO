@@ -1,8 +1,7 @@
 # Shortest Cycle Finder – Graph GUI
 
  **Date** : 02/11/2025  
- **Module** : TPRO  
- **Auteur** : Ikram Badaoui  
+ **Module** : TPRO    
  **Langage** : Python  
   
 
@@ -74,3 +73,7 @@ Complexité approximative :
 - Python 3.x
 - Tkinter (inclus par défaut avec Python)
 
+ ## Students
+
+- **Chattah Salsabila** — ms_chattah@esi.dz
+- **Badaoui Ikram** — mi_badaoui@esi.dz
